@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"testexample\startup_stm32f446xx.o"
+"testexample\main.o"
+"testexample\stm32f4xx_it.o"
+"testexample\stm32f4xx_hal_msp.o"
+"testexample\stm32f4xx_hal_tim.o"
+"testexample\stm32f4xx_hal_tim_ex.o"
+"testexample\stm32f4xx_hal_uart.o"
+"testexample\stm32f4xx_hal_rcc.o"
+"testexample\stm32f4xx_hal_rcc_ex.o"
+"testexample\stm32f4xx_hal_flash.o"
+"testexample\stm32f4xx_hal_flash_ex.o"
+"testexample\stm32f4xx_hal_flash_ramfunc.o"
+"testexample\stm32f4xx_hal_gpio.o"
+"testexample\stm32f4xx_hal_dma_ex.o"
+"testexample\stm32f4xx_hal_dma.o"
+"testexample\stm32f4xx_hal_pwr.o"
+"testexample\stm32f4xx_hal_pwr_ex.o"
+"testexample\stm32f4xx_hal_cortex.o"
+"testexample\stm32f4xx_hal.o"
+"testexample\stm32f4xx_hal_exti.o"
+"testexample\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "TestExample\TestExample.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TestExample.map" -o TestExample\TestExample.axf
